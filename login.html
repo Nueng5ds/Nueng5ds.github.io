@@ -1,0 +1,24 @@
+</body>
+<!DOCTYPE html>
+
+<html>
+    <script src="script.js"></script>
+
+<body>
+    <p>Your username is </p>
+  <input type="text" id="username" placeholder="waiting for login submission">  </input>
+    <p>Your password is </p>
+  <input type="text" id="password" placeholder="waiting for login submission"> </input>
+
+
+
+<script>
+    window.onload= function(){
+      document.getElementById("username").value=localStorage.getItem("user");
+      document.getElementById("password").value=localStorage.getItem("password");
+    }
+    console.log(localStorage.getItem("user"));
+
+</script>
+</body>
+</html>
