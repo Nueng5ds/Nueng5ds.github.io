@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script src="script.js"></script>
+        <body>
+            <center>
+                <h1>User information</h1>
+                <span id="yourusername"></span>
+                <p></p>
+                <span id="yourpassword"></span>
+                <script>
+                    document.getElementById("yourusername").innerHTML="Username : "+ localStorage.getItem("youruser");
+                    document.getElementById("yourpassword").innerHTML="Password : "+ localStorage.getItem("yourpass");
+                </script>
+            </center>
+        </body>
+    </head>
+</html>
